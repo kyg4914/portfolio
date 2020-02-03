@@ -6,10 +6,15 @@
 <body>
 	<!-- myButton이라는 아이디값을 갖는 버튼 생성 -->
 	<button id="myButton">Click me</button>
-	<input type="button" value="배경색 변경" onClick="document.bgColor='red';">
-	<input type="text" id="name1" onfocus="focusFunction(this.id)">
-	<input type="text" id="name2" onfocus="focusFunction(this.id)" onblur="blurFunction(this.id)">
-	<input type="text" id="name3" onfocus="focusFunction(this.id)" onblur="blurFunction(this.id)">
+	<form id="form_dbl" dblclick="dblClickFunction(this.id)">
+		<input type="button" value="배경색 변경" onClick="document.bgColor='red';">
+		<input type="text" id="name1" onfocus="focusFunction(this.id)">
+		<input type="text" id="name2" onfocus="focusFunction(this.id)" onblur="blurFunction(this.id)">
+		<input type="text" id="name3" onfocus="focusFunction(this.id)" onblur="dblClickFunction(this.id)">
+	
+	
+	</form>
+	
 
  <script> 
  //myButton 이라는 아이디 값을 갖는 엘리먼트를 찾아 button에 저장
